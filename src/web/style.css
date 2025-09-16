@@ -1,24 +1,55 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #cccccc;
     font-family: Arial, sans-serif;
     margin: 40px;
     color: #333;
+
+    /*background-image: url("phone.jpg");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+}
+
+.container {
+    max-width: 512px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h1 {
+    background-color: #e3dede;
+    border: 2px solid #ccc;
+    margin: 0 auto 30px auto;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 200px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+
     text-align: center;
     color: #2c3e50;
     margin-bottom: 30px;
 }
 
 details {
-    background-color: #fff;
+    background-color: #e3dede;
     border: 2px solid #ccc;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 10px;
-    margin-bottom: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+details details {
+    margin-top: 0;
+    margin-left: 20px;
+    background-color: #f5f5f5;
+    border-color: #bbb;
+    border-left: 4px solid #a47c2d;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+details > details:first-of-type {
+    margin-top: 20px;
 }
 
 summary {
@@ -26,10 +57,11 @@ summary {
     font-weight: bold;
     cursor: pointer;
     color: #34495e;
+    transition: all 0.2s ease;
 }
 
 summary:hover {
-    color: #1abc9c;
+    color: #a47c2d;
 }
 
 details p {
