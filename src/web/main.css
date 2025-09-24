@@ -52,15 +52,15 @@ nav li {
     font-size: 20px;
 }
 
-nav li a {
-    display: inline-block;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
+/*nav li a {*/
+/*    display: inline-block;*/
+/*    transition: transform 0.2s ease, color 0.2s ease;*/
+/*}*/
 
-nav li a:hover {
-    color: #a08018;
-    transform: scale(1.02);
-}
+/*nav li a:hover {*/
+/*    color: #a08018;*/
+/*    transform: scale(1.02);*/
+/*}*/
 
 main {
     margin: 20px;
@@ -139,3 +139,36 @@ a {
     color: black;
 }
 
+
+header .text-link,
+footer .text-link {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: black;
+}
+
+header .text-link {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main .text-link {
+    color: midnightblue;
+    text-underline-offset: 2px;
+    transition: text-decoration 2s ease;
+}
+
+footer .text-link {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+main .text-link:hover {
+    text-decoration: underline
+}
+
+header .text-link:hover,
+footer .text-link:hover {
+    transform: scale(1.02);
+    color: #a08018;
+}
