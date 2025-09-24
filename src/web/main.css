@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/Alan_Sans,EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/Alan_Sans,EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alan Sans';
+    src: url('../../fonts/Alan_Sans,EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
