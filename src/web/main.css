@@ -53,7 +53,7 @@ footer {
 
 
 header {
-    height: 40px;
+    height: 80px;
     border-bottom: 1px solid darkgray;
 }
 
@@ -74,6 +74,13 @@ header {
 
 .header-text-link {
     color: white;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+    text-align: center;
 }
 
 #header-logo-text {
@@ -101,17 +108,13 @@ main {
     margin: 0 auto;
 }
 
-main .greeting {
+#greeting {
     display: flex;
     justify-content: center; /* по горизонтали */
     align-items: flex-start; /* выравнивание по началу оси (по вертикали) */
     flex-wrap: wrap; /* если экран узкий — перенос строк */
+    margin-top: 20px;
     padding: 20px;
-}
-
-.main-text-link {
-    color: #a47c2d;
-    text-decoration: underline;
 }
 
 #about-me {
@@ -130,18 +133,51 @@ main .greeting {
     justify-content: center; /* по горизонтали */
     align-items: center; /* по вертикали */
 
-    height: 50px;
-    width: 200px;
-    margin: 30px auto; /* сверху и по центру */
+    height: 80px;
+    width: 160px;
 
-    background-color: lightgray;
-
-    border: 1px solid lightgray;
+    background-color: #f5f5f5;
+    border: 1px solid darkgray;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .link-block a {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+    width: 100%;
+    height: 100%;
     color: black;
+    text-align: center;
+}
+
+.link-block:hover {
+    background-color: #e0e0e0;
+}
+
+.main-text-link {
+    color: #a47c2d;
+    text-decoration: underline;
+}
+
+#notes {
+    display: flex;
+    flex-direction: column; /* вертикальное расположение */
+    align-items: center; /* по центру горизонтали */
+    padding: 20px;
+}
+
+#notes h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#notes-links {
+    display: flex;
+    gap: 20px; /* отступы между кнопками */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
