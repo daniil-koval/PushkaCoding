@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alan Sans';
+    src: url('../../fonts/EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+    background-color: #343434;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: left;
+    padding: 0 20px;
+    border-bottom: 2px solid darkgray;
+    min-height: 50px;
+}
+
+.logo a.project-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo a.project-name img  {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: silver;
+}
+
+main {
+    margin: 0 10px;
+    flex: 1;
+}
+
+footer {
+    min-height: 150px;
+    justify-content: center;
+    border-top: 2px solid darkgray;
+}
+
+
+/* Стили блоков */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    padding: 0 20px; /* Костыль */
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    /*box-sizing: border-box; */
+}
+
+main .content-wrapper {
+    background-image: url("../../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+/* Стили текста */
+a {
+    text-decoration: none;
+}
+
+.header-text-link,
+.header .project-name {
+    color: white;
+}
+
+.text-block {
+    margin-top: 20px;
+    padding: 10px 10px 20px;
+    background-color: rgb(255, 255, 255, 0.95);
+}
+
+.paragraph {
+    margin-top: 10px;
+}
+
+.footer-text-link {
+    color: lightgray;
+}
+

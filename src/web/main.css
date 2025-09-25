@@ -1,26 +1,27 @@
 @font-face {
     font-family: 'EB Garamond';
     src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 800;
     font-style: normal;
+    font-weight: 400 800;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'EB Garamond';
     src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 800;
     font-style: italic;
+    font-weight: 400 800;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Alan Sans';
     src: url('../../fonts/EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 800;
     font-style: normal;
+    font-weight: 400 800;
     font-display: swap;
 }
+
 
 * {
     margin: 0;
@@ -38,6 +39,11 @@ body {
     font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 header,
 footer {
     background-color: #343434;
@@ -45,82 +51,126 @@ footer {
     align-items: center;
 }
 
-header {
-    justify-content: space-between;
-    padding: 0 20px;
-    border-bottom: 2px solid darkgray;
-    min-height: 50px;
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*box-sizing: border-box; */
 }
 
-.logo {
+
+header {
+    height: 40px;
+    border-bottom: 1px solid darkgray;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+    width: 100%;
+    height: 100%;
+}
+
+.header-flex a {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.logo img {
-    height: 40px;
-    margin-right: 10px;
+.header-text-link {
+    color: white;
 }
 
-.project-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: silver;
+#header-logo-text {
+    color: lightgray;
 }
+
+#header-logo-img {
+    height: 30px;
+}
+
+#header-logo-text,
+#header-logo-img {
+    transition: transform 0.3s ease;
+}
+
+#header-logo-img:hover {
+    transform: scale(1.03);
+}
+
 
 main {
-    margin: 0 10px;
     flex: 1;
 }
 
-footer {
-    min-height: 150px;
-    justify-content: center;
-    border-top: 2px solid darkgray;
-}
-
-
-/* Стили блоков */
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-weight: bold;
-}
-
-.content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    /*box-sizing: border-box; */
-
+main .content-wrapper {
     background-image: url("../../img/logo.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
 }
 
-/* Стили текста */
-a {
-    text-decoration: none;
+.main-text-link {
+    color: #a47c2d;
+    text-decoration: underline;
 }
 
-.header-text-link,
-.header .project-name {
-    color: white;
-}
-
-.text-block {
+#about-me {
     margin-top: 20px;
     padding: 10px 10px 20px;
-    background-color: rgb(255, 255, 255, 0.95);
 }
 
-.paragraph {
+.link-block {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+
+    height: 50px;
+    width: 150px;
+
+    background-color: lightgray;
+    color: black;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+footer {
+    justify-content: center; /* по горизонтали */
+    align-items: flex-start; /* Прижимает к верхнему краю */
+    gap: 80px;
+    padding: 20px; /* сверху и по бокам */
+    flex-wrap: wrap; /* если экран узкий — перенос строк */
+    color: lightgray;
+    font-size: 14px;
+    border-top: 1px solid darkgray;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* выравнивание по левому краю */
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
     margin-top: 10px;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
 }
 
 .footer-text-link {
     color: lightgray;
+    transition: color 0.3s ease;
 }
 
+.footer-text-link:hover {
+    color: white;
+}
