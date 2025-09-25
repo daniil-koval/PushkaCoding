@@ -89,14 +89,14 @@ nav ul {
     padding: 0 20px; /* Костыль */
 }
 
-.content-wrapper {
+.greeting {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     /*box-sizing: border-box; */
 }
 
-main .content-wrapper {
+main .greeting {
     background-image: url("../../img/logo.png");
     background-repeat: no-repeat;
     background-position: top center;

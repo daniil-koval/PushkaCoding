@@ -51,13 +51,6 @@ footer {
     align-items: center;
 }
 
-.content-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /*box-sizing: border-box; */
-}
-
 
 header {
     height: 40px;
@@ -74,8 +67,8 @@ header {
 
 .header-flex a {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
     gap: 10px;
 }
 
@@ -97,19 +90,23 @@ header {
 }
 
 #header-logo-img:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 
 
 main {
     flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-main .content-wrapper {
-    background-image: url("../../img/logo.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+main .greeting {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: flex-start; /* выравнивание по началу оси (по вертикали) */
+    flex-wrap: wrap; /* если экран узкий — перенос строк */
+    padding: 20px;
 }
 
 .main-text-link {
@@ -118,8 +115,14 @@ main .content-wrapper {
 }
 
 #about-me {
-    margin-top: 20px;
-    padding: 10px 10px 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+#laptop img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain; /* Вписать изображение в контейнер, сохранив пропорции, не обрезая */
 }
 
 .link-block {
@@ -128,14 +131,19 @@ main .content-wrapper {
     align-items: center; /* по вертикали */
 
     height: 50px;
-    width: 150px;
+    width: 200px;
+    margin: 30px auto; /* сверху и по центру */
 
     background-color: lightgray;
-    color: black;
 
     border: 1px solid lightgray;
     border-radius: 5px;
 }
+
+.link-block a {
+    color: black;
+}
+
 
 footer {
     justify-content: center; /* по горизонтали */
@@ -168,7 +176,7 @@ footer p {
 
 .footer-text-link {
     color: lightgray;
-    transition: color 0.3s ease;
+    transition: color 0.6s ease;
 }
 
 .footer-text-link:hover {
