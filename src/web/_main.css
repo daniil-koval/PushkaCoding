@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alan Sans';
+    src: url('../../fonts/EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #343434;
+    color: white;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+main {
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.paragraph {
+    margin-top: 20px;
+}
+
+.section-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.section-button,
+#send-email,
+footer {
+    /*background: #efe1b8;*/
+    background-color: lightgray;
+}
+
+.section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 120px;
+    border: 1px solid #7d7b72;
+    border-radius: 5px;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.section-button:hover {
+    transform: scale(1.01);
+    color: #a08018;
+}
+
+#send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 200px;
+    max-width: 500px;
+
+    border: 1px solid #7d7b72;
+    border-radius: 5px;
+
+    margin: 30px auto;
+    padding: 10px;
+}
+
+footer {
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid silver;
+    font-size: 16px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer div {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+
+header .text-link,
+footer .text-link {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: black;
+}
+
+header .text-link {
+    font-weight: bold;
+}
+
+main .text-link {
+    color: #7c6513;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+footer .text-link {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+header .text-link:hover,
+footer .text-link:hover,
+main .text-link:hover {
+    transform: scale(1.01);
+    color: #a08018;
+}
