@@ -71,10 +71,6 @@ header {
 main {
     margin: 0 10px;
     flex: 1;
-    background-image: url("../../img/helloworld.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 footer {
@@ -97,6 +93,11 @@ nav ul {
     margin: 0 auto;
     width: 100%;
     /*box-sizing: border-box; */
+
+    background-image: url("../../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
 }
 
 /* Стили текста */
