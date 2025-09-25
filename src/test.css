@@ -1,0 +1,11 @@
+.хуй {
+    height: 200px;
+    width: 200px;
+    background-color: #a08018;
+    margin: 20px;
+    padding: 10px 50px;
+}
+
+.залупа {
+    box-sizing: border-box;
+}

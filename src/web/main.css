@@ -42,13 +42,30 @@ header,
 footer {
     background-color: #343434;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 header {
+    justify-content: space-between;
+    padding: 0 20px;
     border-bottom: 2px solid darkgray;
     min-height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: silver;
 }
 
 main {
@@ -62,6 +79,8 @@ main {
 
 footer {
     min-height: 150px;
+    justify-content: center;
+    border-top: 2px solid darkgray;
 }
 
 
@@ -73,20 +92,25 @@ nav ul {
     font-weight: bold;
 }
 
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    /*box-sizing: border-box; */
+}
 
 /* Стили текста */
 a {
     text-decoration: none;
 }
 
-.header-text-link {
+.header-text-link,
+.header .project-name {
     color: white;
 }
 
 .text-block {
     margin-top: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
     padding: 10px 10px 20px;
     background-color: rgb(255, 255, 255, 0.95);
 }
