@@ -23,6 +23,7 @@
 }
 
 
+/* ==== Common ====*/
 * {
     margin: 0;
     padding: 0;
@@ -39,11 +40,36 @@ body {
     font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
 }
 
 
+/* ==== United ====*/
 header,
 footer {
     background-color: #343434;
@@ -52,6 +78,7 @@ footer {
 }
 
 
+/* ==== Header ====*/
 header {
     height: 80px;
     border-bottom: 1px solid darkgray;
@@ -101,6 +128,7 @@ header {
 }
 
 
+/* ==== Main ====*/
 main {
     flex: 1;
     width: 100%;
@@ -109,23 +137,12 @@ main {
     padding: 20px;
 }
 
-#greeting {
+.text-block {
     display: flex;
     justify-content: center; /* по горизонтали */
     align-items: flex-start; /* выравнивание по началу оси (по вертикали) */
     flex-wrap: wrap; /* если экран узкий — перенос строк */
     margin-top: 20px;
-}
-
-#about-me {
-    flex: 1;
-    min-width: 250px;
-}
-
-#laptop img {
-    max-width: 300px;
-    height: auto;
-    object-fit: contain; /* Вписать изображение в контейнер, сохранив пропорции, не обрезая */
 }
 
 .link-block {
@@ -142,6 +159,15 @@ main {
     transition: background-color 0.3s ease;
 }
 
+.link-block:hover {
+    background-color: #e0e0e0;
+}
+
+.main-text-link {
+    color: #a47c2d;
+    text-decoration: underline;
+}
+
 .link-block a {
     display: flex;
     justify-content: center; /* по горизонтали */
@@ -152,13 +178,15 @@ main {
     text-align: center;
 }
 
-.link-block:hover {
-    background-color: #e0e0e0;
+#about-me {
+    flex: 1;
+    min-width: 250px;
 }
 
-.main-text-link {
-    color: #a47c2d;
-    text-decoration: underline;
+#laptop img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain; /* Вписать изображение в контейнер, сохранив пропорции, не обрезая */
 }
 
 #notes {
@@ -181,6 +209,7 @@ main {
 }
 
 
+/* ==== Footer ====*/
 footer {
     justify-content: center; /* по горизонтали */
     align-items: flex-start; /* Прижимает к верхнему краю */
