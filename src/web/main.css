@@ -106,6 +106,7 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 #greeting {
@@ -114,7 +115,6 @@ main {
     align-items: flex-start; /* выравнивание по началу оси (по вертикали) */
     flex-wrap: wrap; /* если экран узкий — перенос строк */
     margin-top: 20px;
-    padding: 20px;
 }
 
 #about-me {
