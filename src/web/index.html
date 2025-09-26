@@ -24,8 +24,8 @@
 </header>
 
 <main>
-    <section id="about-me-section">
-        <div id="about-me">
+    <section class="section" id="about-me-section">
+        <div id="text-about-me">
             <p>Привет! Меня зовут Даниил, мне 26 лет.</p>
 
             <p>
@@ -40,51 +40,56 @@
             </p>
 
             <p>
-                Этот сайт — мой рабочий конспект и тренировочный
-                проект.
-                Здесь я систематизирую всё, что изучаю, чтобы двигаться вперёд осознанно и с интересом.
+                Этот сайт — мой рабочий конспект и тренировочный проект. Здесь я систематизирую всё, что изучаю, чтобы
+                двигаться вперёд осознанно и с интересом.
+            </p>
+
+            <p>
+                В будущем я хочу превратить его в образовательный портал с открытым доступом ко всей информации —
+                бесплатно, для всех и навсегда. А пока — это просто мои заметки.
             </p>
         </div>
 
-        <div id="laptop">
+        <div id="laptop-img">
             <img src="../../img/laptop.png" alt="PushUp Coding">
         </div>
     </section>
 
-    <section id="notes">
-        <h3>Конспекты</h3>
+    <section class="section" id="notes">
+        <h4>Конспекты</h4>
         <div id="notes-links">
-            <div class="link-block">
+            <div class="link-block" id="notes-link-library">
                 <a href="library.html">Библиотека</a>
             </div>
 
-            <div class="link-block">
+            <div class="link-block" id="notes-link-java">
                 <a href="java.html">Java</a>
             </div>
 
             <div class="link-block">
-                <a href="basicCourse.html">За ручку в программирование</a>
+                <a href="basicCourse.html" id="notes-link-basic">За ручку в программирование</a>
             </div>
         </div>
     </section>
 </main>
 
-<footer>
+<footer id="footer-section">
     <div>
-        <p>Разделы</p>
+        <h4 class="footer-title">Разделы</h4>
         <ul>
             <li><a href="#top" class="footer-text-link">Главная</a></li>
             <li><a href="versionHistory.html" class="footer-text-link">История версий</a></li>
-            <li><a href="plans.html" class="footer-text-link">Планы</a></li>
+            <li><a href="plans.html" class="footer-text-link">Планируемые обновления</a></li>
         </ul>
     </div>
 
-    <div>
-        <p>Контакты</p>
+    <div id="footer-contacts">
+        <h4 class="footer-title">Контакты</h4>
         <div id="contacts"></div>
         <ul>
             <li>Email: <a href="#" class="footer-text-link">alal@alal.alal</a></li>
             <li>Telegramm: <a href="#send-email" class="footer-text-link">#alal</a></li>
+            <li><a href="#" class="footer-text-link">GitHub</a></li>
         </ul>
     </div>
 </footer>

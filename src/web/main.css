@@ -53,19 +53,42 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
 p {
-    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+/*.short-p {*/
+/*    line-height: 1.6;*/
+/*    margin: 0 0 0 15px;*/
+/*}*/
+
 a {
     text-decoration: none;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li ul {
+    margin-left: 20px;
+}
+
+li ul li::marker {
+    font-size: 0.6em; /* уменьшает размер маркера */
+    color: gray; /* делает точку менее яркой */
 }
 
 
@@ -134,15 +157,21 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
 }
 
- section {
+.section {
     display: flex;
     flex-wrap: wrap; /* если экран узкий — перенос строк */
-    justify-content: center; /* по горизонтали */
-    align-items: flex-start; /* выравнивание по началу оси (по вертикали) */
     margin-top: 20px;
+}
+
+.section--column {
+    flex-direction: column; /* вертикальное располжение элементов */
+    align-items: flex-start; /* выравнивание по началу оси (по горизонтали) */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link-block {
@@ -155,12 +184,17 @@ main {
 
     background-color: #f5f5f5;
     border: 1px solid darkgray;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 15px;
+
+    will-change: transform; /* Рассчитать анимацию заранее */
+    transition: background-color 0.9s ease,
+    transform 0.3s ease;
 }
 
 .link-block:hover {
     background-color: #e0e0e0;
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .main-text-link {
@@ -178,12 +212,12 @@ main {
     text-align: center;
 }
 
-#about-me {
+#text-about-me {
     flex: 1;
     min-width: 250px;
 }
 
-#laptop img {
+#laptop-img img {
     max-width: 300px;
     height: auto;
     object-fit: contain; /* Вписать изображение в контейнер, сохранив пропорции, не обрезая */
@@ -199,6 +233,27 @@ main {
     gap: 20px; /* отступы между кнопками */
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#notes-link-library {
+    background-image: url("../../img/library.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#notes-link-java {
+    background-image: url("../../img/java.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#notes-link-basic {
+    background-image: url("../../img/basic.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -227,7 +282,7 @@ footer ul {
     margin-top: 10px;
 }
 
-footer p {
+.footer-title {
     color: white;
     font-weight: bold;
 }
@@ -239,4 +294,13 @@ footer p {
 
 .footer-text-link:hover {
     color: white;
+}
+
+
+/* ==== Вспомогательная шляпа ==== */
+hr {
+    height: 1px;
+    background-color: darkgray;
+    margin: 20px 0;
+    width: 100%;
 }
