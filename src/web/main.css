@@ -1,4 +1,11 @@
-/* ====== UNITED PAGES ====== */
+/* ==== RESET ==== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==== FONTS ==== */
 @font-face {
     font-family: 'EB Garamond';
     src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
@@ -24,12 +31,7 @@
 }
 
 
-/* ==== COMMON ==== */
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/* ==== BASE ==== */
 html {
     scroll-behavior: smooth;
 }
@@ -43,25 +45,25 @@ body {
 
 h1 {
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 800; /* extra bold */
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700; /* bold */
     margin-bottom: 16px;
 }
 
 h3 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 600; /* semi bold */
     margin-bottom: 12px;
 }
 
 h4 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 600; /* semi bold */
     margin-bottom: 12px;
 }
 
@@ -72,6 +74,7 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 li {
@@ -87,8 +90,57 @@ li ul li::marker {
     color: gray; /* делает точку менее яркой */
 }
 
+hr {
+    height: 1px;
+    background-color: darkgray;
+    margin: 20px 0;
+    width: 100%;
+} /* что это, блять??? */
 
-/* ==== UNITED ==== */
+
+/* ==== TEXT ==== */
+.font-black {
+    color: black;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-gray {
+    color: lightgray;
+}
+
+
+/* ==== LINKS ==== */
+.link_1 {
+    color: lightgray;
+}
+
+.link_2 {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.link_3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #272727;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.link_3:hover {
+    color: #000000;
+}
+
+.link_4 {
+    color: #a47c2d;
+    text-decoration: underline;
+}
+
+
+/* ==== COMMON ==== */
 header,
 footer {
     background-color: #343434;
@@ -97,9 +149,9 @@ footer {
 }
 
 
-/* === HEADER === */
+/* ==== COMPONENTS: HEADER ==== */
 header {
-    height: 80px;
+    min-height: 80px;
     border-bottom: 1px solid darkgray;
 }
 
@@ -116,11 +168,6 @@ header {
     display: flex;
     justify-content: center; /* по горизонтали */
     align-items: center; /* по вертикали */
-    gap: 10px;
-}
-
-.header-text-link {
-    color: white;
 }
 
 .logo-block {
@@ -130,35 +177,24 @@ header {
     text-align: center;
 }
 
-#header-logo-text {
-    color: lightgray;
-}
-
 #header-logo-img {
     height: 30px;
 }
 
-#header-logo-text,
-#header-logo-img {
-    transition: transform 0.3s ease;
-}
 
-#header-logo-img:hover {
-    transform: scale(1.3);
-}
-
-
-/* ==== MAIN ====*/
+/* ==== COMPONENTS: MAIN ==== */
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 
     max-width: 1200px;
     width: 100%;
 
-    margin: 30px auto;
+    margin: 10px auto;
     padding: 0 40px;
 
-    box-sizing: border-box;
+    box-sizing: border-box; /* Вписать paddings в родителя */
 }
 
 .flex--row {
@@ -181,7 +217,7 @@ main {
 }
 
 
-/* ==== FOOTER ==== */
+/* ==== COMPONENTS: FOOTER ==== */
 footer {
     justify-content: center; /* по горизонтали */
     align-items: flex-start; /* Прижимает к верхнему краю */
@@ -223,39 +259,61 @@ footer ul {
     color: white;
 }
 
-
-/* ==== HELPER ==== */
-hr {
-    height: 1px;
-    background-color: darkgray;
-    margin: 20px 0;
+#up {
     width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+
+    border: 1px solid darkgray;
+    border-radius: 3px;
+
+    background-color: silver;
+}
+
+#up:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    background-color: lightgray;
 }
 
 
+/* ==== UTILS ==== */
+.transform-scale {
+    transition: transform 0.3s ease;
+}
 
-/* ====== PAGE: index.html ====== */
+.transform-scale:hover {
+    transform: scale(1.3);
+}
+
+.card-up {
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-up:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transform: translateY(-4px); /* переместить блок вверх на 4px */
+}
+
+
+/* ~~~~~~ PAGE: index.html ~~~~~~ */
 .note-card {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     width: 150px;
     height: 150px;
     padding: 12px;
-    overflow: hidden;
 
     display: flex;
     flex-direction: column; /* вертикально */
     justify-content: space-between; /* главная ось */
     align-items: center; /* поперечная ось */
-
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.note-card:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transform: translateY(-4px); /* переместить блок вверх на 4px */
 }
 
 .note-card p {
@@ -314,3 +372,19 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+
+
+
+/* ~~~~~~ TEST ~~~~~~ */
+details {
+    margin-bottom: 16px;
+}
+
+.inner-details {
+    padding: 0 0 0 50px;
+}
+
+
+
