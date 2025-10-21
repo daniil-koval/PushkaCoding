@@ -44,24 +44,36 @@ body {
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: 800; /* extra bold */
+    font-size: 40px;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 700; /* bold */
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 16px;
 }
 
 h3 {
-    font-size: 16px;
-    font-weight: 600; /* semi bold */
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
 h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h6 {
     font-size: 14px;
     font-weight: 600; /* semi bold */
     margin-bottom: 12px;
@@ -383,7 +395,12 @@ details {
 }
 
 .inner-details {
-    padding: 0 0 0 50px;
+    padding: 10px 0 0 50px;
+
+    border-left: 2px solid #dba323;
+    border-right: 2px solid #dba323;
+    border-radius: 10px;
+
 }
 
 
