@@ -8,7 +8,7 @@
 /* ==== FONTS ==== */
 @font-face {
     font-family: 'EB Garamond';
-    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/EB_Garamond/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 400 800;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'EB Garamond';
-    src: url('../../fonts/EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/EB_Garamond/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
     font-style: italic;
     font-weight: 400 800;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Alan Sans';
-    src: url('../../fonts/EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/EB_Garamond/Alan_Sans/AlanSans-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 400 800;
     font-display: swap;
