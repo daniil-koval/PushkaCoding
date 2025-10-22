@@ -7,7 +7,7 @@ I've made a clear decision to pursue **web development with Java**.
 
 This is my personal learning project. I've committed to becoming a **Java web developer**,  
 and I'm documenting my journey to better understand the material and share the process.
-The project is written in **Russian**, as it's my native language and helps me learn more effectively. 
+The project is written in **Russian**, as it's my native language. 
 
 > ⚠️ There may be mistakes — don't take everything here as absolute truth.  
 > If you're learning — welcome. If you're an expert — feel free to correct me.
