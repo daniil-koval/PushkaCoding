@@ -6,4 +6,4 @@ If you're learning — welcome. If you're an expert — feel free to correct me.
 
 ---
 
-**Let's learn together.**
+**Let's learn together!**
